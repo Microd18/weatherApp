@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="328.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="70.0" prefWidth="327.0" style="-fx-background-color: black;">
+            <children>
+                <Text fill="WHITE" layoutX="90.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОГОДА" textAlignment="CENTER" wrappingWidth="146.13671875">
+                    <font>
+                        <Font name="System Bold" size="33.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="city" alignment="TOP_CENTER" layoutX="37.0" layoutY="102.0" prefHeight="33.0" prefWidth="254.0" promptText="ВВЕДИТЕ ГОРОД" style="-fx-background-color: #DCDCDC; -fx-border-color: #DCDCDC; -fx-border-radius: 7;">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="getData" layoutX="91.0" layoutY="177.0" mnemonicParsing="false" style="-fx-background-color: #DCDCDC;" text="УЗНАТЬ ПОГОДУ" textFill="#363636">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Text fill="#c93939" layoutX="14.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ИНФОРМАЦИЯ" textAlignment="CENTER" wrappingWidth="207.0">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Text>
+        <Text fx:id="feel" fill="WHITE" layoutX="14.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ОЩУЩАЕТСЯ:" wrappingWidth="220.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <Text fx:id="temp_info" fill="WHITE" layoutX="14.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТЕМПЕРАТУРА:" wrappingWidth="220.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <Text fx:id="temp_max" fill="WHITE" layoutX="14.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МАКСИМУМ:" wrappingWidth="220.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <Text fx:id="temp_min" fill="WHITE" layoutX="14.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МИНИМУМ:" wrappingWidth="220.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <Text fx:id="presure" fill="WHITE" layoutX="14.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДАВЛЕНИЕ:" wrappingWidth="220.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
